@@ -1,9 +1,6 @@
 import { LIMITFUTURE } from "../src/definitions/chart";
 
 export default {
-    // range: {
-    //   timeFrameMS: 3600000, // 1hr
-    // },
     dataSource: {
         source: {
             rangeLimitFuture: null,

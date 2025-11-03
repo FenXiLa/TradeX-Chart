@@ -187,8 +187,23 @@ export default class ConfigDialogue extends Dialogue {
     const colourInput = document.createElement("tradex-colourinput")
     input.type = "text"
     input.pattern = RGBAHex
-    colourInput.setTarget(input)
+    // 确保有可用的 id，便于关联
+    if (!input.id) input.id = uid("colour")
+    // 将自定义元素插入到输入框后，避免未升级前直接调用方法
+    input.insertAdjacentElement('afterend', colourInput)
     colourInput.style.display = "inline-block"
+    try {
+      if (customElements.get('tradex-colourinput')) {
+        colourInput.setTarget(input)
+      } else if (customElements.whenDefined) {
+        customElements.whenDefined('tradex-colourinput').then(() => {
+          if (typeof colourInput.setTarget === 'function') colourInput.setTarget(input)
+        }).catch(()=>{})
+      }
+    } catch (e) {
+      // 回退：设置属性，等待组件自行初始化
+      colourInput.setAttribute('target', input.id)
+    }
   }
 }
 // end of class ConfigDialogue 

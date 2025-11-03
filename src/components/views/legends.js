@@ -246,18 +246,33 @@ export default class tradeXLegends extends element {
       </div>
     `;
 
+    // Check for custom title style in theme or options
+    const customTitleStyle = o?.titleStyle || theme.legend?.titleStyle?.[o?.type] || theme.legend?.titleStyle
+    
     switch (o?.type) {
       case "chart":
-        styleLegendTitle += "font-size: 1.5em;"; 
+        // Use custom style if provided, otherwise use default
+        styleLegendTitle += customTitleStyle || "font-size: 1.5em;"; 
         break;
       case "secondary":
         styleLegend += " margin-bottom: -1.5em;";
-        styleLegendTitle += ""; 
+        styleLegendTitle += customTitleStyle || ""; 
         o.title = ""
         break;
       default:
-        styleLegendTitle += "font-size: 1.2em;"; 
+        // Use custom style if provided, otherwise use default
+        styleLegendTitle += customTitleStyle || "font-size: 1.2em;"; 
         break;
+    }
+    
+    // Append any additional custom styles from theme.legend.titleStyleExtra
+    if (theme.legend?.titleStyleExtra) {
+      styleLegendTitle += ` ${theme.legend.titleStyleExtra}`;
+    }
+    
+    // Append any additional custom styles from options
+    if (o?.titleStyleExtra) {
+      styleLegendTitle += ` ${o.titleStyleExtra}`;
     }
 
     const node = `

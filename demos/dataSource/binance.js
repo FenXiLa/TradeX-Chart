@@ -83,19 +83,38 @@ function kline_Binance2(
   const url = `https://api.binance.com/api/v3/klines?symbol=${symbol}&interval=${interval}&startTime=${start}&limit=${limit}`;
   return new Promise((resolve, reject) => {
     try {
-      fetch(url)
-        .then((r) => r.json())
+      fetch(url, {
+        method: 'GET',
+        mode: 'cors', // Explicitly set CORS mode
+        cache: 'no-cache',
+      })
+        .then((r) => {
+          if (!r.ok) {
+            throw new Error(`HTTP error! status: ${r.status}`);
+          }
+          return r.json();
+        })
         .then((d) => {
-          console.log(d);
-          resolve({ ohlcv: d });
+          // Validate response data
+          if (Array.isArray(d)) {
+            console.log(`Fetched ${d.length} candles from Binance for ${symbol}`);
+            resolve({ ohlcv: d });
+          } else {
+            throw new Error('Invalid response format from Binance API');
+          }
         })
         .catch((e) => {
-          console.error(e);
-          reject(e);
+          // Enhanced error logging
+          const errorMsg = e.message || 'Unknown error occurred';
+          console.error(`Failed to fetch data from Binance (${symbol}):`, errorMsg);
+          console.warn('This may be due to CORS restrictions or network issues.');
+          console.info('Chart will continue with existing static data.');
+          // Reject with a more descriptive error
+          reject(new Error(`Binance API fetch failed: ${errorMsg}`));
         });
     } catch (e) {
-      console.error(e);
-      reject(e);
+      console.error('Error in kline_Binance2:', e.message || e);
+      reject(new Error(`Failed to fetch data: ${e.message || 'Unknown error'}`));
     }
   });
 }
