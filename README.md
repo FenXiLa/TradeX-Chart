@@ -100,7 +100,7 @@ Types provided
 ## Documentation
 
 Documentation can be found here:
-[Documentation](http://www.dtale.cn/TradeX-Chart/)
+[Documentation](https://chart.fenxila.com/)
 
 or built and run locally from the repository by running:
 
@@ -123,18 +123,18 @@ Editable sandbox examples can found on [CodeSandbox.io](https://codesandbox.io/u
 ## Features
 
 * Plain JavaScript with no framework dependencies
-* All chart features and functions accessible via [API](http://www.dtale.cn/TradeX-Chart/api/core/)
-* [State object](http://www.dtale.cn/TradeX-Chart/reference/state/) defines [chart configuration](http://www.dtale.cn/TradeX-Chart/reference/02_configuration/), [indicators](http://www.dtale.cn/TradeX-Chart/reference/indicators_default/) and tools
-* State can be [imported](https://http://www.dtale.cn/TradeX-Chart/reference/state/#create-and-use-a-state) or [exported](http://www.dtale.cn/TradeX-Chart/reference/state/#export) for storage and retrieval
+* All chart features and functions accessible via [API](https://chart.fenxila.com/api/core/)
+* [State object](https://chart.fenxila.com/reference/state/) defines [chart configuration](https://chart.fenxila.com/reference/02_configuration/), [indicators](https://chart.fenxila.com/reference/indicators_default/) and tools
+* State can be [imported](https://https://chart.fenxila.com/reference/state/#create-and-use-a-state) or [exported](https://chart.fenxila.com/reference/state/#export) for storage and retrieval
 * Indicator calculation provided by [talib-web](https://https://anchegt.github.io/talib-web/) as a WebAssembly module.
-* [Custom Themes](http://www.dtale.cn/TradeX-Chart/reference/themes/)
-* [Custom Indicators](http://www.dtale.cn/TradeX-Chart/reference/indicators_default/https:/)
-* [Custom Overlays](http://www.dtale.cn/TradeX-Chart/reference/overlays_custom/https:/)
+* [Custom Themes](https://chart.fenxila.com/reference/themes/)
+* [Custom Indicators](https://chart.fenxila.com/reference/indicators_default/https:/)
+* [Custom Overlays](https://chart.fenxila.com/reference/overlays_custom/https:/)
 * Custom Drawing Tools (to be implemented)
-* [Event Hub](http://www.dtale.cn/TradeX-Chart/reference/events/) - subscribe to chart events
+* [Event Hub](https://chart.fenxila.com/reference/events/) - subscribe to chart events
 * Rendering Optimization - smooth performance
 * High frequency chart candles updates
-* [Export chart to png, jpg](http://www.dtale.cn/TradeX-Chart/reference/api-examples/#download-image), webp, with optional watermarking
+* [Export chart to png, jpg](https://chart.fenxila.com/reference/api-examples/#download-image), webp, with optional watermarking
 
 ## Support
 
@@ -151,7 +151,7 @@ Testing, [bug reports and feature requests](https://github.com/tradex-app/TradeX
 
 If you have any bugs, issues, or feature requests, please, before making a submission, first:
 * [check the GitHub issue tracker](https://github.com/tradex-app/TradeX-Chart/issues)
-* [documentation](http://www.dtale.cn/TradeX-Chart/)
+* [documentation](https://chart.fenxila.com/)
 * [live examples](https://tradex-chart.guildmedia.net/examples/static_chart/)
 * [development roadmap](https://github.com/tradex-app/TradeX-Chart/blob/master/docs/TradeX-chart-Development-Roadmap.pdf)
 

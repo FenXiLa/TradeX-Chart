@@ -48,9 +48,9 @@ Testing, [bug reports, and feature requests](https://github.com/tradex-app/Trade
 
 If you have any bugs/issues/feature requests, please, before making a submission, first check:
 * check the GitHub issue tracker: https://github.com/tradex-app/TradeX-Chart/issues
-* documentation: http://www.dtale.cn/TradeX-Chart/
+* documentation: https://chart.fenxila.com/
 * live examples: https://tradex-chart.guildmedia.net/examples/static_chart/
-* development roadmap: http://www.dtale.cn/TradeX-Chart/TradeX-chart-Development-Roadmap.pdf
+* development roadmap: https://chart.fenxila.com/TradeX-chart-Development-Roadmap.pdf
 
 To contribute:
 * [Fork the chart repository](https://github.com/tradex-app/TradeX-Chart/fork)

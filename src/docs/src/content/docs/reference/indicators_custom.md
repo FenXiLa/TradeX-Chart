@@ -319,7 +319,7 @@ export default class CustomRSI extends Indicator {
   /**
    * return inputs required to display indicator legend on chart pane
    * legends can display multiple values
-   * http://www.dtale.cn/TradeX-Chart/reference/legends/
+   * https://chart.fenxila.com/reference/legends/
    * @param {Array} [pos=this.chart.cursorPos] - optional
    * @returns {Object} - {inputs, colours, labels}
    */

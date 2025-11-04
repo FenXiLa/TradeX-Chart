@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://www.dtale.cn/TradeX-Chart/',
+  site: 'https://chart.fenxila.com/',
   base: '/TradeX-Chart',
   outDir: 'dist2',
   build: {

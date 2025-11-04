@@ -62,15 +62,15 @@
     "timeline",
     "klinechart"
   ],
-  "homepage": "http://www.dtale.cn/TradeX-Chart/",
+  "homepage": "https://chart.fenxila.com/",
   "repository": {
     "type": "git",
-    "url": "http://www.dtale.cn/TradeX-Chart"
+    "url": "https://chart.fenxila.com"
   },
   "bugs": {
     "url": "https://github.com/WangLaoShi/TradeX-Chart/issues"
   },
   "documentation": {
-    "url": "http://www.dtale.cn/TradeX-Chart/"
+    "url": "https://chart.fenxila.com/"
   }
 }

@@ -18,7 +18,7 @@ export const Info = () => {
             </Link>
           </li>
           <li>
-            <Link href="http://www.dtale.cn/TradeX-Chart/reference/">
+            <Link href="https://chart.fenxila.com/reference/">
               Documentation
             </Link>
           </li>
