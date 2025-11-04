@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
   site: 'www.dtale.cn/TradeX-Chart/',
-  base: '/TradeX-chart',
+  base: '/TradeX-Chart',
   integrations: [
     starlight({
       title: 'TradeX Chart',
@@ -17,16 +17,16 @@ export default defineConfig({
       tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
       sidebar: [
         {
+          label: 'Reference',
+          autogenerate: { directory: 'reference' },
+        },
+        {
           label: 'Examples',
           autogenerate: { directory: 'examples' },
         },
         {
           label: 'Guides',
           autogenerate: { directory: 'guides' },
-        },
-        {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' },
         },
         {
           label: 'API',
