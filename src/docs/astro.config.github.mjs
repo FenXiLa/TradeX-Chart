@@ -21,12 +21,12 @@ export default defineConfig({
       tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
       sidebar: [
         {
-          label: 'Guides',
-          autogenerate: { directory: 'guides' },
-        },
-        {
           label: 'Reference',
           autogenerate: { directory: 'reference' },
+        },
+        {
+          label: 'Guides',
+          autogenerate: { directory: 'guides' },
         },
         {
           label: 'Examples',
